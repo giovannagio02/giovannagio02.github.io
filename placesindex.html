@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Spaces - Hidden Places</title>
+    <link href="placesstyles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <span><ion-icon name="mail-open-outline"></ion-icon>sfaspace@gmail.com</span>
+        <ul>
+            <li><a href="errorindex.html"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="errorindex.html"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="errorindex.html"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a class="icons" href="errorindex.html"><ion-icon name="log-in-outline"></ion-icon></a></li>
+            <li><a class="icons" href="errorindex.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="/images/logo.png" alt="logo"></a>
+    </div>
+    <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="placesindex.html">Hidden Places</a></li>
+        <li><a href="translindex.html">Discover</a></li>
+        <li><a href="translindex.html">Community</a></li>
+        <a href="errorpage">
+            <a href="errorindex.html" class="button">HELP</a>
+        </a>
+    </div>
+</nav>
+<div class="bground">
+    <div class="welcome">
+        <h1>Are you ready to explore?</h1>
+        <p>Choose the place were to hide from the responsibility of reality.</p>
+    </div>
+    <div class="flexbox-container">
+        <div class="flexbox-item flex-item-1">
+            <p><a href="parkindex.html">Hjelmagervænget Legeplads Park!</a></p>
+        </div>
+        <div class="flexbox-item flex-item-2">
+            <p><a href="bookindex.html">Bøger og Ting!</a></p>
+        </div>
+        <div class="flexbox-item flex-item-3">
+            <p><a href="butikindex.html">Butik Kærlig Hilsen!</a></p>
+        </div>
+        <div class="flexbox-item flex-item-4">
+            <p><a href="cafeindex.html">Rohde's Cafe!</a></p>
+        </div>
+        <div class="flexbox-item flex-item-5">
+            <p><a href="errorindex.html"></a></p>
+        </div>
+    </div>
+    <div class="text-city">
+        <h3>About Skødstrup</h3>
+        <p>Skødstrup Parish is a parish in Århus Nordre Provsti. <br>
+            In the 19th century was an independent parish. <br>
+            Skødstrup parish municipality was incorporated into Aarhus Municipality <br>
+            during the municipal reform in 1970. <br>
+            In the parish there are the many authorized place names <br>
+            like: Bondehaven, Løgten, Elishøj and Åstrup. <br>
+            Løgten is a station town close to forest, beach, and the big city of Aarhus.</p>
+    </div>
+    <div class="city-picture">
+        <img class="responsive" src="/images/building.jpg">
+    </div>
+    <div class="back-images">
+        <img class="responsive" src="/images/bush.png">
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1>Company</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="placesindex.html">Hidden Places</a></li>
+                        <li><a href="translindex.html">Discover</a></li>
+                        <li><a href="translindex.html">Community</a></li>
+                        <li><a href="translindex.html">Privacy Notice</a></li>
+                        <li><a href="translindex.html">Cookie Preference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h1>Contacts</h1>
+                    <ul>
+                        <li><a href="#">e-mail: safespace@gmail.com</a></li>
+                        <li><a href="#">CVR: 19115917</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h1>Follow Us</h1>
+                    <div class="social-links">
+                        <a href="errorindex.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="errorindex.html"><i class="fab fa-twitter"></i></a>
+                        <a href="errorindex.html"><i class="fab fa-instagram"></i></a>
+                        <a href="errorindex.html"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+<script>
+/*Toggle menu on and off function */
+    $(function(){
+        $(".toggle").on("click", function(){
+            if($(".menu").hasClass("active")){
+                $(".menu").removeClass("active");
+                $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+            } else{
+                $(".menu").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+            }
+        });
+    });
+</script>
+</body>
+</html>
